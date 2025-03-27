@@ -5,10 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/", (req, res) => {
-  res.send("Welcome to Express TypeScript.");
-});
-
 app.use("/api/users", usersRouter);
 
 const PORT = process.env.PORT || 3000;
