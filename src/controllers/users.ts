@@ -9,7 +9,7 @@ export const getUserById = async (req: Request, res: Response) => {
   res.send({});
 };
 
-export const createUser = async (req: Request, res: Response) => {
+export const createUser = async (req: Request, res: Response<User>) => {
   res.send({
     id: 1,
     name: "Kevin",
