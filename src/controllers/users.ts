@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { User } from "../types/response";
 
 export const getUsers = async (req: Request, res: Response) => {
-  res.send({ message: "Hello Typescript users." });
+  res.send({ message: "Welcome to Express TypeScript" });
 };
 
 export const getUserById = async (req: Request, res: Response) => {
