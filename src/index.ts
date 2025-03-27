@@ -3,6 +3,10 @@ import usersRouter from "./routes/users";
 
 const app = express();
 
+app.use("/", (req, res) => {
+  res.send("Welcome to Express TypeScript");
+});
+
 app.use("/api/users", usersRouter);
 
 const PORT = 3000;
